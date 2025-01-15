@@ -1,0 +1,54 @@
+    1  ls
+    2  pwd
+    3  ls  -al
+    4  cd ..
+    5  pwd
+    6  ls
+    7  ls -al
+    8  cd ~
+    9  pwd
+   10  ls -al
+   11  clear
+   12  cd /workspaces
+   13  ls
+   14  cd /workspaces/ds2002-jdx7es/
+   15  ls
+   16  touch file1.txt
+   17  ls
+   18  touch file2.txt
+   19  touch file3.txt
+   20  echo "hello" > file1.txt
+   21  ls -al
+   22  cat file1.txt
+   23  cat file1.txt > file2.txt
+   24  cat file1.txt > file3.txt
+   25  ls -al
+   26  echo "second line" >> file2.txt
+   27  clear
+   28  cat file2.txt
+   29  mkdir files
+   30  ls
+   31  ls -al
+   32  mv file1.txt files/
+   33  touch file4.txt
+   34  touch file5.txt
+   35  cp file2.txt file6.txt
+   36  cp file3.txt file7.txt
+   37  ls
+   38  mv file*.txt files/
+   39  ls -al
+   40  rm files/file7.txt 
+   41  ls
+   42  ls -al files/
+   43  clear
+   44  top
+   45  clear
+   46  ps
+   47  ps aux
+   48  cd files/
+   49  ps aux > file6.txt
+   50  ls -al
+   51  head file6.txt 
+   52  clear
+   53  history
+   54  history > file5.txt
