@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>ACCORD Research Console</title>
+
+    <link rel="canonical" href="/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="icon" href="https://www.rc.virginia.edu/images/favicon.ico">
+    <meta name="theme-color" content="#563d7c">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://s3.amazonaws.com/ds2002-resources/labs/lab4/dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="/">ACCORD Research Console</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
+            data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="#">Sign out</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="sidebar-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">
+                                <span data-feather="home"></span>
+                                Dashboard <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="environments.html">
+                                <span data-feather="codepen"></span>
+                                Running Environments
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="folder-plus"></span>
+                                Manage Projects
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="users"></span>
+                                Manage People
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="bar-chart-2"></span>
+                                Monitor Usage
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="database"></span>
+                                Transfer Data
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="clock"></span>
+                                History
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="layers"></span>
+                                Environment Library
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Dashboard</h1>
+                </div>
+
+                <p class="lead" style="margin-bottom:2rem;">To start your computational research in ACCORD, select one of your projects and then an environment.</p>
+
+                <h4><img src="https://s3.amazonaws.com/ds2002-resources/labs/lab4/no-1.png" alt="1" style="max-width:26px;margin-right:8px;" /> Select a project</h4>
+                <div class="row">
+                    <div class="card col-sm-auto col-md-auto" style="margin-right:1rem;margin-left:1rem;margin-bottom:2rem;width:40%;">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="projectControlSelect">You are a member of</label>
+                                    <select class="form-control" id="projectControlSelect">
+                                        <option id="project_0" value="project_0"> - Select - </option>
+                                        <option>PRX Telemetry Study</option>
+                                        <option>Axial Surgery Outcomes</option>
+                                    </select>
+                                </div>
+                            </form>
+                            <div style="float:right;"><button class="btn btn-sm btn-success"><span data-feather="chevron-right"></span> Create a new project</button></div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr size="1" class="no" />
+
+                <h4 class="no"><img src="https://s3.amazonaws.com/ds2002-resources/labs/lab4/no-2.png" alt="2" style="max-width:26px;margin-right:8px;" /> Select an Environment</h4>
+                <div class="row no">
+                    <div class="card" style="margin-right:1rem;margin-left:1rem;margin-bottom:2rem;width:40%;">
+                        <div class="card-header">
+                            Featured
+                        </div>
+                        <div class="card-body">
+                            <img src="https://pbs.twimg.com/profile_images/929088242456190976/xjkS2L-0_400x400.jpg"
+                                align="right" style="max-width:100px;" alt="Theia IDE" />
+                            <h5 class="card-title">Python 3.7</h5>
+                            <p class="card-text">Work within the Theia Python IDE. Includes a file manager, intelligent
+                                code editor, and a terminal.</p>
+                            <a href="environments.html" class="btn btn-sm btn-primary"><span data-feather="chevron-right"></span> Launch</a>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-right:1rem;margin-left:1rem;margin-bottom:2rem;width:40%;">
+                        <div class="card-header">
+                            Featured
+                        </div>
+                        <div class="card-body">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1200px-Jupyter_logo.svg.png"
+                                align="right" style="max-width:80px;" alt="Jupyter Notebook IDE" />
+                            <h5 class="card-title">Jupyter Notebook</h5>
+                            <p class="card-text">Use an interactive Jupyter Notebook to edit and run snippets of code
+                                against your data.</p>
+                            <a href="environments.html" class="btn btn-sm btn-primary"><span data-feather="chevron-right"></span> Launch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no">
+                    <div class="card" style="margin-right:1rem;margin-left:1rem;margin-bottom:2rem;width:40%;">
+                        <div class="card-header">
+                            Featured
+                        </div>
+                        <div class="card-body">
+                            <img src="https://pbs.twimg.com/profile_images/1111486463412101120/scqjf54K_400x400.png"
+                                align="right" style="max-width:80px;" alt="RStudio" />
+                            <h5 class="card-title">RStudio</h5>
+                            <p class="card-text">The most popular IDE for R programming and data analysis.</p>
+                            <a href="environments.html" class="btn btn-sm btn-primary"><span data-feather="chevron-right"></span> Launch</a>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/docs/4.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="https://s3.amazonaws.com/ds2002-resources/labs/lab4/dashboard.js"></script>
+</body>
+
+</html>
